@@ -1,0 +1,17 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.paymentMethods {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.paymentMethod img {
+  max-height: 32px;
+}

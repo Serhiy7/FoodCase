@@ -1,0 +1,32 @@
+.multiStepForm {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.stepContent {
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #0056d3;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #0041a8;
+}

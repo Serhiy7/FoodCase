@@ -1,0 +1,44 @@
+.burgerButton {
+  /* Убираем дефолтные стили */
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  /* Вертикально выстраиваем три линии */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* чёрный цвет линий */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Крестик при isOpen */
+.burgerButton.open .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burgerButton.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerButton.open .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Скрыть на десктопе (≥768px) */
+@media (min-width: 768px) {
+  .burgerButton {
+    display: none;
+  }
+}

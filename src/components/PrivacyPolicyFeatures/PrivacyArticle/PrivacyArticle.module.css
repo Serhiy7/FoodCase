@@ -1,0 +1,31 @@
+.article {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.article p {
+  margin: 0 0 20px;
+}
+
+.article a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.article a:hover {
+  color: #0056d3;
+}
+
+.article h2 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+
+@media (min-width: 993px) {
+  .article h2 {
+    font-size: 32px;
+  }
+}

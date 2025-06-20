@@ -1,0 +1,83 @@
+/* глобальная установка плавного скролла */
+html {
+  scroll-behavior: smooth;
+}
+
+.page-main {
+  background: #f6f7fa;
+  padding: 35px 0;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.page-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page-grid.revert {
+  flex-direction: column-reverse;
+}
+
+.page-grid__main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.page-grid__aside {
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 15px;
+}
+
+@media (min-width: 1201px) {
+  .page-main {
+    padding: 70px 0;
+  }
+
+  .page-title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+
+  .page-grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .page-grid.revert {
+    flex-direction: row-reverse;
+  }
+
+  .page-grid__aside {
+    width: 365px;
+    position: sticky;
+    top: 130px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hidden-mob {
+    display: none;
+  }
+}

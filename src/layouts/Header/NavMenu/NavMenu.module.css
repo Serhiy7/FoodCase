@@ -1,0 +1,55 @@
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navMenuItem {
+  margin: 0;
+}
+
+.navMenuLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+  display: block;
+}
+
+.navMenuLink:hover {
+  color: #0056d3;
+}
+
+.navMenuLink.active {
+  color: #0056d3;
+  font-weight: 700;
+}
+
+@media (min-width: 767px) {
+  .navMenu {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navMenuLink {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .navMenu {
+    gap: 30px;
+  }
+
+  .navMenuLink {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

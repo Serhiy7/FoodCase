@@ -1,0 +1,40 @@
+.burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 24px;
+  position: relative;
+  z-index: 1000;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+/* Анимация при открытии */
+.burger[aria-expanded="true"] .line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.burger[aria-expanded="true"] .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger[aria-expanded="true"] .line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (min-width: 767px) {
+  .burger {
+    display: none;
+  }
+}

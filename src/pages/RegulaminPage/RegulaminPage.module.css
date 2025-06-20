@@ -1,0 +1,83 @@
+/* включаем плавный скролл по якорям */
+html {
+  scroll-behavior: smooth;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6f7fa;
+}
+
+.pageMain {
+  flex: 1;
+  padding: 35px 0;
+}
+
+.pageContainer {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1201px) {
+  .pageMain {
+    padding: 70px 0;
+  }
+
+  .pageTitle {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+
+  .contentGrid {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+
+  .sidebar {
+    width: 365px;
+    position: sticky;
+    top: 130px;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}

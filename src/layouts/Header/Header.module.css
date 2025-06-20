@@ -1,0 +1,52 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  max-width: 1470px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* сброс списков (если нужно) */
+.mobileMenu,
+.desktopMenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 1) Mobile-first: скрываем десктоп-меню, показываем бургер */
+.desktopMenu {
+  display: none;
+}
+
+.burgerWrapper {
+  display: block;
+}
+
+/* 2) На экранах ≥768px: наоборот */
+@media (min-width: 768px) {
+  .desktopMenu {
+    display: flex;
+    gap: 15px;
+  }
+
+  .burgerWrapper {
+    display: none;
+  }
+
+  /* Если хотите дополнительно прятать мобильное меню-контейнер: */
+  /* .mobileMenuWrapper { display: none; } */
+}

@@ -1,0 +1,10 @@
+.zamowienie-container {
+  display: flex;
+  padding-bottom: 20px;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.menu__btn {
+  font-size: 33px;
+}

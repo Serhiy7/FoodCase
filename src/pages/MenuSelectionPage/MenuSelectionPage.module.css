@@ -1,0 +1,91 @@
+/* src/pages/MenuSelectionPage/MenuSelectionPage.module.css */
+
+/* Корневой контейнер страницы */
+.page {
+  background: #f6f7fa;
+}
+
+/* Основная область страницы */
+.pageMain {
+  padding: 35px 0; /* из .page-main */
+}
+
+/* Внутренний контейнер (тот, что .container в index.css) */
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+/* Заголовок страницы */
+.pageTitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* Сетка «главная колонка + асайд» */
+.pageGrid {
+  display: flex;
+  gap: 15px;
+  flex-direction: column; /* на мобилке */
+}
+
+@media (min-width: 767px) {
+  .pageGrid {
+    flex-direction: row;
+  }
+}
+
+/* Левая колонка (основной контент) */
+.pageGridMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+  padding: 25px;
+  flex: 1 1 auto;
+  min-width: 0;
+  border-radius: 15px;
+  background: #fff;
+}
+
+/* Правая колонка (итоги / Total widget) */
+.pageGridAside {
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  height: 450px;
+
+  /* Делаем «липкую» панель */
+  position: sticky;
+  top: 90px; /* отступ от верха окна */
+
+  max-height: calc(100vh - 40px);
+}
+
+@media (min-width: 993px) {
+  .btn {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  background: #0056d3;
+  border: 1px solid #0056d3;
+  transition: 0.5s;
+}

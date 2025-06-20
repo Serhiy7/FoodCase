@@ -1,0 +1,20 @@
+.container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+.addButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0056d3;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.addButton:hover {
+  background: #0041a8;
+}

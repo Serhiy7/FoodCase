@@ -3,13 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  // Укажите здесь URL вашего проекта на GitHub Pages
   "homepage": "https://Serhiy7.github.io/FoodCase/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    // Деплоим содержимое папки docs в ветку gh-pages
     "deploy": "gh-pages -d docs -b gh-pages",
     "lint": "eslint .",
     "preview": "vite preview"

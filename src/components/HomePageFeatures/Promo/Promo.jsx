@@ -22,9 +22,9 @@ const Promo = () => {
               Nasze opakowanie nie szkodzi naturze.
             </p>
           </div>
-          <a href="#menu" className={`${styles.btn} ${styles.promo__btn}`}>
+          {/* <a href="#menu" className={`${styles.btn} ${styles.promo__btn}`}>
             Zobacz menu
-          </a>
+          </a> */}
         </div>
         <img src={HomePage1} alt="" className={styles.promoImg} />
       </div>

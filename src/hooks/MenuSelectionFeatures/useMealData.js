@@ -1,6 +1,6 @@
 // src/hooks/useMealData.js
 import { useMemo } from "react";
-import { mealData } from "../../data/mealData";
+import { mealData } from "../../data/mealData.js";
 
 /**
  * Хук useMealData принимает параметр `category` (строка: "sniad" | "obiad" | "kolacja"),

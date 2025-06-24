@@ -4,7 +4,7 @@ import styles from "./PackageCard.module.css";
 
 export default function PackageCard({ pkg, selected, onSelect }) {
   // формируем URL картинки по пакету
-  const imgSrc = `/assets/img/pay/${pkg.id}.png`;
+  const imgSrc = pkg.image;
 
   return (
     <div

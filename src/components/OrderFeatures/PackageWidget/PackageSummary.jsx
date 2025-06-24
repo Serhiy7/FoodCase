@@ -13,7 +13,7 @@ export default function PackageSummary({
   if (!pkg) return null;
 
   const { days, originalPrice, price, discountPercent } = priceInfo;
-  const imgSrc = `/assets/img/pay/${pkg.id}.png`;
+  const imgSrc = pkg.image;
 
   return (
     <div className={styles.summaryContainer}>

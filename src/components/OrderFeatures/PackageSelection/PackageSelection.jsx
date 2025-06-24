@@ -3,13 +3,18 @@ import React, { useState, useCallback, useEffect } from "react";
 import PropTypes from "prop-types";
 import PackageWidget from "../PackageWidget/PackageWidget";
 import styles from "./PackageSelection.module.css";
+import Package1200 from "../../../assets/img/pay/1.png";
+import Package1500 from "../../../assets/img/pay/2.png";
+import Package1800 from "../../../assets/img/pay/3.png";
+import Package2000 from "../../../assets/img/pay/4.png";
+import Package2500 from "../../../assets/img/pay/5.png";
 
 const DEFAULT_PACKAGES = [
   {
     id: 1,
     name: "1200",
     price: 50.0,
-    image: "/img/packages/1.png",
+    image: Package1200,
     discount1: 4,
     discount2: 5,
     discount3: 7,
@@ -18,7 +23,7 @@ const DEFAULT_PACKAGES = [
     id: 2,
     name: "1500",
     price: 60.0,
-    image: "/img/packages/2.png",
+    image: Package1500,
     discount1: 4,
     discount2: 5,
     discount3: 7,
@@ -27,7 +32,7 @@ const DEFAULT_PACKAGES = [
     id: 3,
     name: "1800",
     price: 70.0,
-    image: "/img/packages/3.png",
+    image: Package1800,
     discount1: 4,
     discount2: 5,
     discount3: 7,
@@ -36,7 +41,7 @@ const DEFAULT_PACKAGES = [
     id: 4,
     name: "2100",
     price: 80.0,
-    image: "/img/packages/4.png",
+    image: Package2000,
     discount1: 4,
     discount2: 5,
     discount3: 7,
@@ -45,7 +50,7 @@ const DEFAULT_PACKAGES = [
     id: 5,
     name: "2400",
     price: 90.0,
-    image: "/img/packages/5.png",
+    image: Package2500,
     discount1: 4,
     discount2: 5,
     discount3: 7,

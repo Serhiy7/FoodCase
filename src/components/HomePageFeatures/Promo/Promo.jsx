@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Promo.module.css";
+import Icon from "../../../../public/assets/img/promo/icon.png";
 
 const Promo = () => {
   return (
@@ -12,7 +13,7 @@ const Promo = () => {
             <p className={styles.accent}>
               <span>
                 <img
-                  src="/assets/img/promo/icon.png"
+                  src={Icon}
                   alt="Эко-упаковка"
                   className={styles.promoIcon}
                 />

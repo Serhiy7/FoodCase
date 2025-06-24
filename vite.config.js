@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  // Публичный базовый путь на GitHub Pages
   base: "/FoodCase/",
   plugins: [react()],
   resolve: {
@@ -29,7 +28,6 @@ export default defineConfig({
     },
   },
   build: {
-    // собираем в папку docs, чтобы GitHub Pages мог взять её из main/docs
     outDir: "docs",
     emptyOutDir: true,
   },

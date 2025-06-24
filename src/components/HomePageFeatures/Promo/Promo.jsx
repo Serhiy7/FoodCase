@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Promo.module.css";
-import Icon from "../../../../public/assets/img/promo/icon.png";
+import Icon from "../../../assets/img/promo/icon.png";
 
 const Promo = () => {
   return (

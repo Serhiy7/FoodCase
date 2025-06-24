@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Logo.module.css";
+import Logo from "../../../assets/img/logo.png";
 
 /**
  * Логотип с ссылкой на главную страницу
@@ -15,7 +16,7 @@ const Logo = () => (
     tabIndex={0}
   >
     <img
-      src="/public/assets/img/logo.png"
+      src={Logo}
       alt="Логотип сайта"
       className={styles.logoImage}
       draggable={false}

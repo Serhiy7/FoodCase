@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Feedback.module.css";
-
+import FeedbackImg from "../../../assets/img/feedback/1.png";
 const Feedback = () => {
   return (
     <>
@@ -32,7 +32,7 @@ const Feedback = () => {
         </form>
 
         <img
-          src="/assets/img/feedback/1.png"
+          src={FeedbackImg}
           alt="Эко-упаковка"
           className={styles.promoIcon}
         />

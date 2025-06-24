@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FOOTER_LINKS } from "../../../constants/footerData";
+import { FOOTER_LINKS } from "../../../constants/footerData.jsx";
 import styles from "./FooterNavigation.module.css";
 
 const FooterNavigation = () => {

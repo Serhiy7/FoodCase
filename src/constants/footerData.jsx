@@ -1,4 +1,6 @@
 // constants/footerData.js
+import BLIK from "../assets/img/footer/1.png";
+import Visa from "../assets/img/footer/2.png";
 export const FOOTER_LINKS = [
   { path: "/", label: "Strona glowna", isAnchor: false },
   { path: "/order", label: "Standardowe menu", isAnchor: true },
@@ -8,8 +10,8 @@ export const FOOTER_LINKS = [
 ];
 
 export const PAYMENT_METHODS = [
-  { image: "/assets/img/footer/1.png", alt: "Płatność BLIK" },
-  { image: "/assets/img/footer/2.png", alt: "Płatność kartą Visa" },
+  { image: BLIK, alt: "Płatność BLIK" },
+  { image: Visa, alt: "Płatność kartą Visa" },
 ];
 
 export const SOCIAL_LINKS = {

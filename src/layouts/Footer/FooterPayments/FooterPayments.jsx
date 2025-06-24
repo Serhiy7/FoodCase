@@ -1,5 +1,5 @@
 import React from "react";
-import { PAYMENT_METHODS } from "../../../constants/footerData";
+import { PAYMENT_METHODS } from "../../../constants/footerData.jsx";
 import styles from "./FooterPayments.module.css";
 
 const FooterPayments = () => (

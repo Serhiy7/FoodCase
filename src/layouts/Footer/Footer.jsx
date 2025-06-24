@@ -4,6 +4,7 @@ import FooterNavigation from "./FooterNavigation/FooterNavigation";
 import FooterPayments from "./FooterPayments/FooterPayments";
 import FooterContact from "./FooterContact/FooterContact";
 import styles from "./Footer.module.css";
+import LogoFooter from "../../assets/img/footer/logo-w.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className={styles.footer__left}>
           <div className={styles.footer__logFlex}>
             <img
-              src="/assets/img/footer/logo-w.png"
+              src={LogoFooter}
               alt="FoodCase Logo"
               className={styles.footer__logo}
             />

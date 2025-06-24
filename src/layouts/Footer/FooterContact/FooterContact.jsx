@@ -1,5 +1,5 @@
 import React from "react";
-import { SOCIAL_LINKS } from "../../../constants/footerData";
+import { SOCIAL_LINKS } from "../../../constants/footerData.jsx";
 import styles from "./FooterContact.module.css";
 
 const FooterContact = () => (

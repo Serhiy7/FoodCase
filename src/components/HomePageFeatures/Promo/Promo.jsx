@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Promo.module.css";
 import Icon from "../../../assets/img/promo/icon.png";
+import HomePage1 from "../../../assets/img/promo/1.png";
 
 const Promo = () => {
   return (
@@ -25,11 +26,7 @@ const Promo = () => {
             Zobacz menu
           </a>
         </div>
-        <img
-          src="/public/assets/img/promo/1.png"
-          alt=""
-          className={styles.promoImg}
-        />
+        <img src={HomePage1} alt="" className={styles.promoImg} />
       </div>
     </div>
   );

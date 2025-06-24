@@ -7,8 +7,8 @@ import App from "./App.jsx";
 const root = document.getElementById("root");
 
 createRoot(root).render(
-  <React.StrictMode basename="/FoodCase/">
-    <BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basename="/FoodCase/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
